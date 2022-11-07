@@ -1,0 +1,261 @@
+/* цвет основного фона #FFFFFF */
+/* цвет вторичного фона #F7F7F7 */
+/* цвет текста нав #FFFFFF */
+/* цвет текста заголовков #FFFFFF */
+/* второй цвет текста заголовков  #303030*/
+/* цвет текста основной #555555 */
+/* цвет текста #9DA4BD */
+/* цвет  тескта таблица  #9DA4BD */
+/* цвет текста контакты #9DA4BD */
+/* цвет акцента #FF6C00 */
+/* цвет текста тени  rgba(157, 164, 189, 0.6); */
+
+:root {
+  --background-color: #ffffff;
+  --background-color-second: #f7f7f7;
+  --text-color-nav: #ffffff;
+  --text-color-heading: #ffffff;
+  --text-color-heading-second: #303030;
+  --text-color-primary: #555555;
+  --text-color-second: #9da4bd;
+  --text-color-table: #9da4bd;
+  --text-color-contact: #9da4bd;
+  --accent-color: #ff6c00;
+  --text-shadow: rgba(157, 164, 189, 0.6);
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+
+.btn {
+  background-color: var(--text-color-contact);
+  color: var(--text-color-nav);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* хедер */
+.head {
+  background-color: #555555;
+}
+.nav {
+  list-style: none;
+}
+/* навигация */
+.nav .nav-link {
+  color: var(--text-color-nav);
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+}
+.nav .nav-link:hover,
+.nav .nav-link:focus {
+  color: var(--accent-color);
+}
+/* контакт */
+.head .nav-tel {
+  color: var(--text-color-nav);
+  font-family: 'Open Sans' sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.head .nav-tel:hover,
+.head .nav-tel:focus {
+  color: var(--accent-color);
+}
+/* кнопка */
+.head .nav-btn {
+  background-color: #555555;
+  color: var(--text-color-nav);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* старт */
+
+/* о нас */
+
+.about h2 {
+  color: var(--text-color-heading-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.37;
+  text-transform: uppercase;
+}
+
+.about h3 {
+  color: var(--text-color-heading-second);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.about .text-about-first {
+  color: var(--text-color-primary);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.about .text-about-second {
+  color: var(--text-color-primary);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+}
+.about .btn {
+  color: var(--text-color-heading-second);
+  border: 1px solid var(--accent-color);
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* услуги и прайс */
+.services {
+  background-color: var(--text-color-heading-second);
+}
+
+.services .services-slogan {
+  color: var(--text-shadow);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.services .services-title {
+  color: var(--text-color-heading);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.services .services-price {
+  color: var(--text-color-table);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* почему выбирают нас */
+.section .section-title-first {
+  color: var(--text-color-heading-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.section .section-title-second {
+  color: var(--text-color-heading-second);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.section .section-text {
+  color: var(--text-color-primary);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.section .section-advantages {
+  color: var(--text-color-heading-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  list-style: none;
+}
+.section-advantages sup {
+  color: var(--accent-color);
+}
+
+/* барберы */
+.section-barbers {
+  background-color: var(--background-color-second);
+}
+
+.section-barbers .barbers-text {
+  color: var(--text-color-heading-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.section-barbers .barbers-title {
+  color: var(--text-color-heading-second);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+}
+
+.barbers .barbers-name {
+  color: var(--text-color-heading-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
+
+.barbers .barbers-text {
+  color: var(--accent-color);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.02em;
+}
