@@ -13,9 +13,9 @@
 :root {
   --background-color: #ffffff;
   --background-color-second: #f7f7f7;
+  --title-color: #ffffff;
+  --title-color-second: #303030;
   --text-color-nav: #ffffff;
-  --text-color-heading: #ffffff;
-  --text-color-heading-second: #303030;
   --text-color-primary: #555555;
   --text-color-second: #9da4bd;
   --text-color-table: #9da4bd;
@@ -32,13 +32,30 @@ body {
   text-decoration: none;
   list-style: none;
 }
+.social {
+  color: var(--title-color-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
 
+.social:hover,
+.social:focus {
+  color: var(--accent-color);
+}
 .btn {
   background-color: var(--text-color-contact);
   color: var(--text-color-nav);
   border: 1px solid var(--accent-color);
   border-radius: 25px;
   cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--accent-color);
 }
 
 /* хедер */
@@ -91,7 +108,7 @@ body {
 /* о нас */
 
 .about h2 {
-  color: var(--text-color-heading-second);
+  color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -101,7 +118,7 @@ body {
 }
 
 .about h3 {
-  color: var(--text-color-heading-second);
+  color: var(--title-color-second);
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -129,16 +146,10 @@ body {
   line-height: 1.86;
   letter-spacing: 0.02em;
 }
-.about .btn {
-  color: var(--text-color-heading-second);
-  border: 1px solid var(--accent-color);
-  border-radius: 25px;
-  cursor: pointer;
-}
 
 /* услуги и прайс */
 .services {
-  background-color: var(--text-color-heading-second);
+  background-color: var(--title-color-second);
 }
 
 .services .services-slogan {
@@ -152,7 +163,7 @@ body {
 }
 
 .services .services-title {
-  color: var(--text-color-heading);
+  color: var(--title-color);
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -173,7 +184,7 @@ body {
 
 /* почему выбирают нас */
 .section .section-title-first {
-  color: var(--text-color-heading-second);
+  color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -183,7 +194,7 @@ body {
 }
 
 .section .section-title-second {
-  color: var(--text-color-heading-second);
+  color: var(--title-color-second);
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -203,14 +214,14 @@ body {
 }
 
 .section .section-advantages {
-  color: var(--text-color-heading-second);
+  color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 11px;
   line-height: 1.36;
-  list-style: none;
 }
+
 .section-advantages sup {
   color: var(--accent-color);
 }
@@ -221,7 +232,7 @@ body {
 }
 
 .section-barbers .barbers-text {
-  color: var(--text-color-heading-second);
+  color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -231,7 +242,7 @@ body {
 }
 
 .section-barbers .barbers-title {
-  color: var(--text-color-heading-second);
+  color: var(--title-color-second);
   font-family: 'Raleway';
   font-style: normal;
   font-weight: 700;
@@ -241,7 +252,7 @@ body {
 }
 
 .barbers .barbers-name {
-  color: var(--text-color-heading-second);
+  color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 400;
@@ -258,4 +269,110 @@ body {
   font-size: 18px;
   line-height: 1.4;
   letter-spacing: 0.02em;
+}
+
+/* галерея */
+.section-gallery .gallery-title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-gallery .gallery-text {
+  color: var(--title-color-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+/* обратная связь и контакты */
+
+.section-contacts {
+  background-color: var(--background-color-second);
+}
+
+.section-contacts .contacts-title {
+  color: var(--title-color-second);
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+}
+
+.address {
+  font-style: normal;
+}
+
+.address .address-map {
+  color: var(--text-color-contact);
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.address .address-tel {
+  color: var(--text-color-contact);
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.address .address-mail {
+  color: var(--text-color-contact);
+
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+.section-contacts .working-hours {
+  color: var(--title-color-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+}
+
+.section-contacts .hours {
+  color: var(--text-color-contact);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}
+
+/* footer */
+.footer p {
+  color: var(--text-color-contact);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.16;
+  letter-spacing: 0.2em;
 }
