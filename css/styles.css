@@ -27,10 +27,21 @@
 body {
   background-color: var(--background-color);
 }
+img {
+  display: block;
+}
 
 .list {
   text-decoration: none;
   list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+
+  padding: 120px 15px;
 }
 .social {
   color: var(--title-color-second);
@@ -136,7 +147,28 @@ body {
 
 /* о нас */
 
-.about h2 {
+.about {
+  display: flex;
+  align-items: center;
+}
+
+.about-img {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  margin-right: 30px;
+  padding-left: 0;
+}
+.img {
+  margin-right: 30px;
+}
+.img:last-child {
+  margin-right: 0;
+}
+
+.about-content {
+}
+.about-section h2 {
   color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
@@ -146,7 +178,7 @@ body {
   text-transform: uppercase;
 }
 
-.about h3 {
+.about-section h3 {
   color: var(--title-color-second);
   font-family: 'Raleway';
   font-style: normal;
@@ -156,7 +188,7 @@ body {
   letter-spacing: 0.05em;
 }
 
-.about .text-about-first {
+.about-section .text-about-first {
   color: var(--text-color-primary);
   font-family: 'Open Sans';
   font-style: normal;
@@ -166,7 +198,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.about .text-about-second {
+.about-section .text-about-second {
   color: var(--text-color-primary);
   font-family: 'Open Sans';
   font-style: normal;
@@ -261,6 +293,9 @@ body {
 }
 
 .section-barbers .barbers-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
@@ -271,6 +306,9 @@ body {
 }
 
 .section-barbers .barbers-title {
+  margin-top: 0;
+  margin-bottom: 44px;
+
   color: var(--title-color-second);
   font-family: 'Raleway';
   font-style: normal;
@@ -280,7 +318,18 @@ body {
   letter-spacing: 0.05em;
 }
 
+.barbers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
 .barbers .barbers-name {
+  margin-top: 30px;
+  margin-bottom: 8px;
+
   color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
@@ -291,6 +340,8 @@ body {
 }
 
 .barbers .barbers-text {
+  margin-top: 0;
+  margin-bottom: 30px;
   color: var(--accent-color);
   font-family: 'Open Sans';
   font-style: normal;
@@ -316,6 +367,9 @@ body {
 }
 
 .section-gallery .gallery-text {
+  margin-top: 0;
+  margin-bottom: 44px;
+
   color: var(--title-color-second);
   font-family: 'Open Sans';
   font-style: normal;
@@ -325,10 +379,33 @@ body {
   text-transform: uppercase;
 }
 
+.gallery-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* обратная связь и контакты */
 
 .section-contacts {
   background-color: var(--background-color-second);
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+}
+.contacts-content {
+  width: 570px;
+}
+
+.contacts-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .section-contacts .contacts-title {
@@ -342,7 +419,14 @@ body {
 }
 
 .address {
+  margin-left: 130px;
   font-style: normal;
+}
+
+.address-list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .address .address-map {
