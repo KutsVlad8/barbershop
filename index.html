@@ -41,18 +41,20 @@
 
     <main>
       <!-- start -->
-      <section class="start">
-        <div class="container">
-          <ul class="left list">
+      <section class="hero">
+        <div class="hero-content container">
+          <ul class="content-left list">
             <li><a class="social list" href="" rel="noopener noreferrer nofollow">Instagram</a></li>
             <li><a class="social list" href="" rel="noopener noreferrer nofollow">Youtube</a></li>
           </ul>
-          <div class="right">
-            <p>A hair salon for men in Kyiv</p>
-            <h1>BarberShop</h1>
-            <p>
-              We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
-            </p>
+          <div class="content-right">
+            <div class="content-item">
+              <p class="content-greeting">A hair salon for men in Kyiv</p>
+              <h1 class="content-title">BarberShop</h1>
+              <p class="content-text">
+                We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -85,52 +87,78 @@
         <div class="container">
           <p class="services-slogan">Spend your time with the best masters</p>
           <h2 class="services-title">Services and prices</h2>
-          <ul class="services-price list">
-            <li>
-              <p>Men’s haircut from 300 uah.</p>
-            </li>
-            <li>
-              <p>Beard trim from 300 uah.</p>
-            </li>
-            <li>
-              <p>Mustache trim from 200 uah.</p>
-            </li>
-            <li>
-              <p>Straight razor shave from 200 uah.</p>
-            </li>
-            <li>
-              <p>Trainee’s haircut from 50 uah.</p>
-            </li>
-            <li>
-              <p>Haircut under the nozzle from 200 uah.</p>
-            </li>
-            <li>
-              <p>Children’s haircut (0-12 y.o.) from 300 uah.</p>
-            </li>
-            <li>
-              <p>Camouflage of gray hair from 200 uah.</p>
-            </li>
-          </ul>
+          <div class="services-tablet">
+            <ul class="services-price list">
+              <li class="services-price-item">
+                <p class="services-price-text">Men’s haircut</p>
+                <p class="services-price-text">from 300 uah.</p>
+              </li>
+              <li class="services-price-item">
+                <p class="services-price-text">Beard trim</p>
+                <p class="services-price-text">from 300 uah.</p>
+              </li>
+              <li class="services-price-item">
+                <p class="services-price-text">Mustache trim</p>
+                <p class="services-price-text">from 200 uah.</p>
+              </li>
+              <li class="services-price-item">
+                <p class="services-price-text">Straight razor shave</p>
+                <p class="services-price-text">from 200 uah.</p>
+              </li>
+            </ul>
+            <ul class="services-price list">
+              <li class="services-price-item">
+                <p class="services-price-text">Trainee’s haircut</p>
+                <p class="services-price-text">from 50 uah.</p>
+              </li>
+              <li class="services-price-item">
+                <p class="services-price-text">Haircut under the nozzle</p>
+                <p class="services-price-text">from 200 uah.</p>
+              </li>
+              <li class="services-price-item">
+                <p class="services-price-text">Children’s haircut (0-12 y.o.)</p>
+                <p class="services-price-text">from 300 uah.</p>
+              </li>
+              <li class="services-price-item">
+                <p class="services-price-text">Camouflage of gray hair</p>
+                <p class="services-price-text">from 200 uah.</p>
+              </li>
+            </ul>
+          </div>
 
-          <button type="button" class="button">ONLINE-BOOKING</button>
+          <button type="button" class="services-button">ONLINE-BOOKING</button>
         </div>
       </section>
 
       <!--Why people come to us?-->
-      <section class="section">
-        <div class="container">
-          <p class="section-title-first">Old traditional school</p>
-          <h2 class="section-title-second">¿Why people come to us?</h2>
-          <p class="section-text">
-            Only good things are said about us. But it's better to see and feel 1 time than read 10
-            times.
-          </p>
-          <ul class="section-advantages list">
-            <li>600<sup>+</sup> Satisfied customers per day</li>
-            <li>50<sup>+</sup> Awards for excellent service</li>
-            <li>20<sup>+</sup> Kyiv’s best barbers</li>
-            <li>100<sup>+</sup> Gifts for regular customers</li>
+      <section class="why-us-section">
+        <div class="why-us-cotainer container">
+          <ul class="advantages-left list">
+            <li class="advantages-items">
+              <p class="advantage-items-number">600<sup>+</sup></p>
+              <p class="advantage-item-text">Satisfied customers per day</p>
+            </li>
+            <li class="advantages-items">
+              <p class="advantage-items-number">50<sup>+</sup></p>
+              <p class="advantage-item-text">Awards for excellent service</p>
+            </li>
+            <li class="advantages-items">
+              <p class="advantage-items-number">20<sup>+</sup></p>
+              <p class="advantage-item-text">Kyiv’s best barbers</p>
+            </li>
+            <li class="advantages-items">
+              <p class="advantage-items-number">100<sup>+</sup></p>
+              <p class="advantage-item-text">Gifts for regular customers</p>
+            </li>
           </ul>
+          <div class="advantages-right">
+            <p class="section-title-first">Old traditional school</p>
+            <h2 class="section-title-second">¿Why people come to us?</h2>
+            <p class="section-text">
+              Only good things are said about us. But it's better to see and feel 1 time than read
+              10 times.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -145,18 +173,97 @@
               <img src="./image/smith.jpg" alt="photo barbera1" />
               <h3 class="barbers-name">John Smith</h3>
               <p class="barbers-text">Extreme Barber</p>
+
+              <ul class="barbers-social-list list">
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
 
             <li>
               <img src="./image/doe.jpg" alt="photo barbera2" />
               <h3 class="barbers-name">Michele Doe</h3>
               <p class="barbers-text">Extreme Barber</p>
+              <ul class="barbers-social-list list">
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
 
             <li>
               <img src="./image/black.jpg" alt="photo barbera3" />
               <h3 class="barbers-name">Alan Black</h3>
               <p class="barbers-text">Extreme Barber</p>
+              <ul class="barbers-social-list list">
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-instagram"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-twitter"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-facebook"></use></svg
+                  ></a>
+                </li>
+                <li class="social-items">
+                  <a href="" class="item">
+                    <svg class="icon">
+                      <use href="./image/symbol-defs.svg#icon-linkedin"></use></svg
+                  ></a>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
