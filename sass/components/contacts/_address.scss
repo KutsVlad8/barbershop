@@ -1,0 +1,108 @@
+.address {
+  flex-basis: calc(50% - 15px);
+  margin-left: 130px;
+  font-style: normal;
+}
+
+.address__title {
+  margin-top: 0;
+  font-family: 'Raleway';
+
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+
+  color: #ffffff;
+}
+
+.address__list {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.address__item {
+}
+
+.address__map {
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $color-text-secondary;
+  transition: color 300ms linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__tel {
+  font-family: 'Open Sans';
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: $color-text-secondary;
+  transition: color 300ms linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__mail {
+  font-family: 'Open Sans';
+
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: $color-text-secondary;
+  transition: color 300ms linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.address__label {
+  color: $color-title-white;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+
+    margin-right: 20px;
+
+    border-radius: 1px;
+    background-color: rgba(157, 164, 189, 0.4);
+  }
+}
+
+.address__text {
+  color: $color-text-secondary;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+}

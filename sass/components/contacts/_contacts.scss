@@ -1,0 +1,13 @@
+.contacts {
+  padding: 120px 0;
+
+  background-color: #191c26;
+}
+
+.contacts-container {
+  display: flex;
+  align-items: baseline;
+}
+
+@import './form';
+@import './address';

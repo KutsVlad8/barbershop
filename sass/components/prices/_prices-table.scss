@@ -1,0 +1,52 @@
+.services-price__tablet {
+  display: flex;
+}
+
+.services-price-list {
+  flex-basis: calc((100% - 30px) / 2);
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 30px;
+  padding: 30px 20px;
+
+  color: $color-text-secondary;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  background-image: linear-gradient(to bottom, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
+
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+.services-price-list__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  &::after {
+    content: '';
+    flex-grow: 1;
+
+    height: 1px;
+
+    margin: 0px 8px;
+
+    border-radius: 1px;
+    background-color: rgba(157, 164, 189, 0.12);
+  }
+}
+
+.services-price-list__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  &:last-child {
+    order: 1;
+  }
+}

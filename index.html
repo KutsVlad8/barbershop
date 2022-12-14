@@ -14,12 +14,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
+    <link rel="stylesheet" href="./css/main.min.css" />
     <title>Barbershop</title>
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="header-container container">
         <nav class="navigation">
           <a href="./index.html">
             <img src="./image/Logo.svg" alt="logo" />
@@ -41,7 +42,7 @@
           </ul>
         </nav>
         <a href="tel:+380441111111" class="navigation__tel list">+38 044 111 11 11</a>
-        <button type="button" class="navigation__button">Online-booking</button>
+        <button type="button" class="navigation__button button">Online-booking</button>
       </div>
     </header>
 
@@ -95,7 +96,7 @@
               are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button type="button" class="about__button">ONLINE-BOOKING</button>
+            <button type="button" class="about__button button">ONLINE-BOOKING</button>
           </div>
         </div>
       </section>
@@ -151,7 +152,7 @@
             </ul>
           </div>
 
-          <button type="button" class="services-price__button">ONLINE-BOOKING</button>
+          <button type="button" class="services-price__button button">ONLINE-BOOKING</button>
         </div>
       </section>
 
@@ -308,10 +309,10 @@
           <h2 class="gallery__title">Gallery</h2>
           <p class="gallery__text">In Latin, "barba" means "beard"</p>
           <ul class="gallery__list list">
-            <li><img src="./image/Rectangle25.jpg" alt="" /></li>
-            <li><img src="./image/Rectangle26.jpg" alt="" /></li>
-            <li><img src="./image/Rectangle27.jpg" alt="" /></li>
-            <li><img src="./image/Rectangle28.jpg" alt="" /></li>
+            <li class="gallery__item"><img src="./image/Rectangle25.jpg" alt="" /></li>
+            <li class="gallery__item"><img src="./image/Rectangle26.jpg" alt="" /></li>
+            <li class="gallery__item"><img src="./image/Rectangle27.jpg" alt="" /></li>
+            <li class="gallery__item"><img src="./image/Rectangle28.jpg" alt="" /></li>
           </ul>
         </div>
       </section>
@@ -334,7 +335,7 @@
               placeholder="Message"
             ></textarea>
 
-            <button class="form__button" type="submit">send</button>
+            <button class="form__button button" type="submit">send</button>
           </form>
 
           <address class="address">

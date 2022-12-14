@@ -1,0 +1,46 @@
+body {
+  background-color: var(--background-color);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+}
+img {
+  display: block;
+}
+
+.list {
+  text-decoration: none;
+  list-style: none;
+}
+
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  min-width: 160px;
+
+  padding: 12px 20px;
+
+  font-family: 'Open Sans';
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.36;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  background-color: transparent;
+
+  border: 1px solid $accent-color;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: color 300ms linear;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}

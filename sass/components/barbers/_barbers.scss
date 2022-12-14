@@ -1,0 +1,50 @@
+.barbers {
+  padding: 120px 0;
+  background-color: $background-barbers-color;
+}
+
+.barbers__slogan {
+  display: flex;
+  align-items: center;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: $color-title-black;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 1px;
+
+    margin-right: 20px;
+
+    background-color: $color-dish-second;
+    border-radius: 1px;
+  }
+}
+
+.barbers__title {
+  margin-top: 0;
+  margin-bottom: 44px;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.67;
+  letter-spacing: 0.05em;
+
+  color: $color-title-black;
+}
+
+@import './barbers-list';
+@import './barbers-social-list';

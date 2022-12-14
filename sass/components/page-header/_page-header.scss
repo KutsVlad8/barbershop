@@ -1,0 +1,14 @@
+/* хедер */
+.header {
+  position: absolute;
+  width: 100%;
+  padding: 32px 0;
+  background-color: transparent;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
+/* навигация */
+@import './navigation';

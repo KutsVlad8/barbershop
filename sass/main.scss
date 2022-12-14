@@ -1,0 +1,41 @@
+@import './utils/variables';
+@import './utils/fonts-style';
+@import './utils/visually-hidden';
+@import './base/body';
+
+.social {
+  color: var(--title-color-second);
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.2em;
+}
+
+.social:hover,
+.social:focus {
+  color: var(--accent-color);
+}
+
+// page-heder
+@import './components/page-header/page-header';
+// hero
+@import './components/hero/hero';
+// о нас
+@import './components/about/about';
+//  услуги и прайс
+@import './components/prices/prices';
+// почему выбирают нас
+@import './components/why__us/why__us';
+
+/* барберы */
+@import './components/barbers/barbers';
+/* галерея */
+@import './components/gallery/gallery';
+
+/* обратная связь и контакты */
+@import './components/contacts/contacts';
+
+/* footer */
+@import './components/page-footer/page-footer';
